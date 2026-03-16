@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "description": "Warn on potential secrets in written files",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"\nimport sys, re, os\noutput = os.environ.get('CLAUDE_TOOL_OUTPUT', '')\npatterns = [r'sk-[a-zA-Z0-9]{20,}', r'AKIA[A-Z0-9]{16}', r'password\\s*=\\s*[\"\\'][^\"\\']+[\"\\']']\nfor p in patterns:\n    if re.search(p, output):\n        print(f'[dham-hook] WARNING: Possible secret detected in modified file', file=sys.stderr)\n        break\n\" 2>&1 || true"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "",
+        "description": "Log session start with timestamp",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[$(date -u +%Y-%m-%dT%H:%M:%SZ)] Session started in $(pwd)\" >> ~/.claude/session-log.md 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}

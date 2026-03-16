@@ -1,0 +1,26 @@
+{
+  "name": "dham-claude-code",
+  "version": "1.0.0",
+  "description": "Personal Claude Code plugin — battle-tested agents, skills, hooks, and rules for data & cloud architecture, AWS, Databricks, dbt, iOS, and web development.",
+  "author": {
+    "name": "Dhamotharan Palanisamy",
+    "url": "https://github.com/DamyTheKnightKing"
+  },
+  "homepage": "https://github.com/DamyTheKnightKing/dham-claude-code",
+  "repository": "https://github.com/DamyTheKnightKing/dham-claude-code",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agents",
+    "skills",
+    "hooks",
+    "aws",
+    "databricks",
+    "dbt",
+    "data-architecture",
+    "ios",
+    "automation",
+    "python",
+    "sql"
+  ]
+}
