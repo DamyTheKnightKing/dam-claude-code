@@ -1,4 +1,4 @@
-# dham-claude-code
+# dam-claude-code
 
 Personal Claude Code plugin for data & cloud architecture, AWS, Databricks, dbt, automation, iOS, and web development.
 
@@ -20,8 +20,8 @@ Personal Claude Code plugin for data & cloud architecture, AWS, Databricks, dbt,
 ```json
 {
   "extraKnownMarketplaces": {
-    "dham": {
-      "source": { "source": "github", "repo": "DamyTheKnightKing/dham-claude-code" }
+    "dha": {
+      "source": { "source": "github", "repo": "DamyTheKnightKing/dam-claude-code" }
     }
   }
 }
@@ -29,7 +29,7 @@ Personal Claude Code plugin for data & cloud architecture, AWS, Databricks, dbt,
 
 2. Install via Claude Code:
 ```
-/plugin install dham-claude-code@dham
+/plugin install dam-claude-code@dha
 ```
 
 ### Local Development
